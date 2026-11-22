@@ -1,0 +1,84 @@
+/* 傣锦纹录 封面织锦墙
+   每一行由两组相同纹样首尾接续；相邻行反向缓移。
+   图片保留档案原色，裁切范围沿用精选纹样墙的记录。 */
+.hero.hero-flow-active{isolation:isolate}
+.hero-flow-active .hero-media{
+  inset:0;overflow:hidden;background:#102C23;
+  animation:none!important;transform:none!important;will-change:auto;
+}
+.hero-flow-active .hero-media::after{display:none}
+.hero-flow-active .hero-art--ghost{display:none}
+.hero-flow-active .hero-media > #heroArt{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;transform:none!important;
+}
+.hero-flow-active .hero-media.hero-flow-ready > #heroArt{visibility:hidden}
+.hero-flow-scene{
+  position:absolute;inset:0;overflow:hidden;pointer-events:none;
+  opacity:0;contain:strict;
+}
+.hero-flow-ready .hero-flow-scene{opacity:1}
+.hero-flow-plane{
+  --flow-gap:12px;
+  position:absolute;left:50%;top:50%;
+  width:var(--flow-width);display:flex;flex-direction:column;
+  gap:var(--flow-gap);
+  transform:translate3d(-50%,-50%,0) rotate(-9deg);
+  transform-origin:50% 50%;
+}
+.hero-flow-row{
+  height:var(--flow-tile-height);width:100%;flex:none;
+  overflow:hidden;opacity:var(--flow-opacity,1);
+}
+.hero-flow-strip{
+  display:flex;width:max-content;height:100%;gap:0;
+  transform:translate3d(0,0,0);
+  animation:daijinHeroWeft var(--flow-duration,160s) linear infinite;
+  animation-delay:var(--flow-delay,0s);
+  animation-play-state:running;
+  will-change:transform;
+}
+.hero-flow-row:nth-child(even) .hero-flow-strip{animation-direction:reverse}
+.hero-flow-group{
+  display:flex;flex:none;height:100%;
+  gap:var(--flow-gap);padding-right:var(--flow-gap);
+}
+.hero-flow-tile{
+  display:block;flex:0 0 var(--flow-tile-width);
+  width:var(--flow-tile-width);height:100%;margin:0;
+  overflow:hidden;border:1px solid rgba(198,163,91,.23);
+  border-radius:8px;background:#183A2F;
+}
+.hero-flow-tile svg{display:block;width:100%;height:100%;overflow:hidden}
+.hero-flow-tile image{filter:none}
+.hero-flow-active .hero-veil{
+  z-index:1;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(7,23,16,.95) 0%,rgba(7,23,16,.84) 31%,rgba(7,23,16,.40) 66%,rgba(7,23,16,.31) 100%),
+    linear-gradient(180deg,rgba(7,19,13,.62),rgba(7,19,13,.05) 28%,rgba(7,19,13,.10) 58%,rgba(7,19,13,.82));
+}
+.hero-flow-active .hero-copy,
+.hero-flow-active .hero-facts{z-index:1}
+.hero-flow-active .hero-flow-scene.is-paused .hero-flow-strip{
+  animation-play-state:paused;will-change:auto;
+}
+@keyframes daijinHeroWeft{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(-50%,0,0)}
+}
+@media(max-width:760px){
+  .hero-flow-plane{--flow-gap:8px}
+  .hero-flow-tile{border-radius:6px}
+  .hero-flow-active .hero-veil{
+    background:
+      linear-gradient(90deg,rgba(7,23,16,.91),rgba(7,23,16,.62) 64%,rgba(7,23,16,.40)),
+      linear-gradient(180deg,rgba(7,19,13,.58),rgba(7,19,13,.12) 31%,rgba(7,19,13,.15) 58%,rgba(7,19,13,.90));
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-flow-strip{animation-play-state:paused!important;will-change:auto!important}
+}
+html.static .hero-flow-strip{animation-play-state:paused!important;will-change:auto!important}
+@media print{
+  .hero-flow-strip{animation-play-state:paused!important;will-change:auto!important}
+}

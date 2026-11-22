@@ -1,0 +1,21 @@
+/* Reading and navigation refinements. */
+.archive-bar,.region-detail{scroll-margin-top:calc(var(--site-header-height) + 18px)}
+.empty{font-size:16px;line-height:1.8}
+.empty button{min-height:44px;margin-top:16px;padding:10px 22px;border:1px solid var(--gold);color:var(--jade)}
+.p-cell:focus-visible span{opacity:1;transform:none}
+.p-cell:focus-visible::after{opacity:1}
+@media(max-width:760px){
+  .p-cell{display:flex;flex-direction:column;aspect-ratio:auto}
+  .p-cell img{display:block;height:auto;aspect-ratio:1;object-fit:contain}
+  .p-cell span{position:static;inset:auto;min-height:36px;align-items:center;padding:8px 2px 2px;opacity:1;transform:none;background:var(--paper);color:var(--jade);font-size:12px;line-height:1.5;letter-spacing:0}
+  .p-cell::after{display:none}
+}
+@media(max-width:380px){
+  .lx-route[data-lx-route="mother-mi"] .lx-path{flex-direction:column;align-items:stretch;gap:8px}
+  .lx-route[data-lx-route="mother-mi"] .lx-person{flex:none;min-height:70px;padding:10px}
+  .lx-route[data-lx-route="mother-mi"] .lx-person b{font-size:20px}
+  .lx-route[data-lx-route="mother-mi"] .lx-link{flex:none;align-self:center;width:32px;height:38px;padding:0}
+  .lx-route[data-lx-route="mother-mi"] .lx-link svg{height:32px;width:32px;transform:rotate(90deg)}
+  .lx-route[data-lx-route="mother-mi"] .lx-link>span{width:100px;left:36px;top:0;bottom:auto;text-align:left;font-size:12px}
+  .lx-route[data-lx-route="mother-mi"] .lx-link>span i{display:inline}
+}

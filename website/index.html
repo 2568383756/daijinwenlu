@@ -1,0 +1,609 @@
+<!doctype html>
+
+<html lang="zh-CN">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>傣锦纹录｜云南傣锦文化资源数字化保护与交互展示</title>
+
+<meta name="description" content="走进云南傣锦的纹样与工序，探访地方故事，在数字档案中阅读经纬，在互动体验中探索纹样。">
+
+<!--
+
+  DESIGN DNA　傣锦纹录
+
+  气质：沉静，织造感，有出处——不是国潮，是一部可以翻阅的档案
+
+  字体：宋体（标题与正文，思源/系统宋体回退）＋ 系统黑体（标签，数据）
+
+  色板：宣纸 #F5F1E6 / 深绿 #16241D / 青绿 #214C43 / 薄荷 #BFD8C4 / 古金 #C6A35B / 赭红 #B46152
+
+  布局：满版纹样 Hero → 竖排题签 → 地图＋档案列表 → 深色工艺章 → 130 件档案 → 深色图谱 → 转译台 → 人与时间
+
+  签名：竖排章节题签与朱砂印；卷轴式滚动进度；地图脉冲与连线；档案格悬停显编号；可实时重排的转译台
+
+  禁忌：大红大金，堆砌祥云回纹，把未核实功能写成已完成
+
+-->
+
+<link rel="stylesheet" href="site.css?v=38">
+
+<link rel="stylesheet" href="motion/daijin-scroll.css?v=38">
+
+<link rel="stylesheet" href="motion/chapter-transitions.css?v=38">
+
+<link rel="stylesheet" href="motion/hero-flow.css?v=38">
+<link rel="stylesheet" href="motion/atlas-experience.css?v=38">
+<link rel="stylesheet" href="motion/pattern-studio.css?v=38"><link rel="stylesheet" href="motion/loom-experience.css?v=39">
+<link rel="stylesheet" href="motion/lineage-experience.css?v=38">
+<link rel="stylesheet" href="motion/reading-layout.css?v=38">
+<link rel="stylesheet" href="motion/visual-finish.css?v=38">
+<link rel="stylesheet" href="motion/mobile-experience.css?v=38">
+<link rel="stylesheet" href="motion/experience-refinements.css?v=38"><link rel="stylesheet" href="motion/research-carousel.css?v=38">
+</head>
+
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
+
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.6" xChannelSelector="R" yChannelSelector="G"/></filter>
+
+</defs></svg>
+
+
+
+<header class="site-head" id="siteHead">
+
+  <a class="brand" href="#hero" aria-label="傣锦纹录首页">
+
+    <span class="brand-seal" aria-hidden="true">傣</span>
+
+    <span class="brand-text">傣锦纹录<em>DAI BROCADE ARCHIVE</em></span>
+
+  </a>
+
+  <nav class="site-nav" aria-label="章节导航">
+
+    <a href="#scroll">展卷</a>
+
+    <a href="#region">地域溯源</a>
+
+    <a href="#craft">经纬工艺</a>
+
+    <a href="#archive">纹样档案</a>
+
+    <a href="#relations">纹样关系</a>
+
+    <a href="#translate">互动转译</a>
+
+    <a href="#people">传承故事</a>
+
+  </nav>
+
+  <button class="head-login" id="loginBtn" type="button">登录</button>
+
+  <button class="head-action" id="headSearch" type="button">检索档案<span aria-hidden="true">⌕</span></button>
+
+  <div class="head-progress" aria-hidden="true"><i id="headProgress"></i></div>
+
+</header>
+
+
+
+<main>
+
+  <!-- 00 首屏 -->
+
+  <section class="hero" id="hero">
+
+    <div class="hero-media" aria-hidden="true">
+
+      <img src="mosaics/mosaic-rich.webp" alt="" id="heroArt" width="3360" height="1440" decoding="async">
+
+      <img class="hero-art--ghost" src="mosaics/mosaic-rich.webp" alt="" aria-hidden="true" width="3360" height="1440" decoding="async">
+
+      <div class="hero-veil"></div>
+
+    </div>
+
+    <div class="hero-copy">
+
+
+      <h1><img src="assets/titles/title-gold.webp" alt="傣锦纹录" width="969" height="360" decoding="async" fetchpriority="high"></h1>
+
+
+      <div class="hero-actions">
+
+        <a class="hero-entry hero-entry--paper" href="#scroll"><svg viewBox="0 0 480 128" preserveAspectRatio="none" aria-hidden="true"><path class="entry-fill" d="M28 8H452V24H472V104H452V120H28V104H8V24H28Z"/><path class="entry-line" d="M36 16H444V32H464V96H444V112H36V96H16V32H36Z"/></svg><span>从序章开始</span></a>
+
+        <a class="hero-entry hero-entry--gold" href="#archive"><svg viewBox="0 0 480 128" preserveAspectRatio="none" aria-hidden="true"><path class="entry-fill" d="M28 8H452V24H472V104H452V120H28V104H8V24H28Z"/><path class="entry-line" d="M36 16H444V32H464V96H444V112H36V96H16V32H36Z"/></svg><span>浏览纹样档案</span></a>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- 00.5 锦卷 -->
+
+  <section class="chapter chapter--scroll" id="scroll">
+
+    <div class="wrap">
+
+      <header class="chapter-head reveal">
+
+        <div><p class="chap-no"><img class="chap-icon" src="assets/icons/archive.webp" alt="" width="512" height="512" decoding="async" loading="lazy"><span>序</span>PROLOGUE</p>
+
+        <h2 class="plain-title">展开一卷锦</h2></div>
+
+        <p class="lede">九幅纹样相接，织成一卷锦色。展卷，细看经纬间的形与序。</p>
+
+      </header>
+
+      <div class="scroll-mount reveal" id="scrollMount" role="button" tabindex="0" aria-label="点击卷轴展开或收卷"></div>
+
+      <p class="scroll-hint-line">点击卷轴，展开或收卷</p></div>
+
+  </section>
+
+
+
+  <!-- 01 地域溯源 -->
+
+  <section class="chapter chapter--paper mark-br" id="region" style="--mark:url('assets/illustrations/c01-stilt-house.webp')">
+
+    <div class="wrap">
+
+      <header class="chapter-head reveal">
+
+        <p class="chap-no"><img class="chap-icon" src="assets/icons/region.webp" alt="" width="512" height="512" decoding="async" loading="lazy"><span>壹</span>REGION</p>
+
+        <img class="brush" src="assets/titles/02-地域溯源.webp" alt="地域溯源" width="969" height="360" decoding="async" loading="lazy">
+
+        <p class="lede">走进西双版纳与普洱，再到德宏，探访织锦村寨与传习日常。</p>
+
+      </header>
+
+
+
+      <div class="region-grid">
+
+        <div class="map-stage reveal">
+
+          <div class="map-frame">
+
+            <img src="assets/map/yunnan.svg" alt="云南省轮廓与五处傣锦活动区域示意" decoding="async" loading="lazy">
+
+            <div class="map-pins" id="mapPins"></div>
+
+          </div>
+
+        </div>
+
+        <div class="region-side">
+
+          <ol class="region-list" id="regionList"></ol>
+
+          <div class="region-detail" id="regionDetail" aria-live="polite"></div>
+
+        </div>
+
+      </div></div>
+
+  </section>
+
+
+
+  <!-- 02 经纬工艺 -->
+
+  <section class="chapter chapter--dark mark-tr" id="craft" style="--mark:url('assets/illustrations/c02-elephant.webp')">
+
+    <div class="wrap">
+
+      <header class="chapter-head reveal">
+
+        <p class="chap-no"><img class="chap-icon" src="assets/icons/craft.webp" alt="" width="512" height="512" decoding="async" loading="lazy"><span>贰</span>CRAFT</p>
+
+        <img class="brush brush--plate" src="assets/titles/03-经纬工艺.webp" alt="经纬工艺" width="969" height="360" decoding="async" loading="lazy">
+
+        <p class="lede">从备线染线，到定样制版，再到上机织作，纹样在经纬间逐渐成形。</p>
+
+      </header>
+
+
+
+      <div class="craft-grid">
+
+        <figure class="scene reveal">
+
+          <img src="assets/illustrations/p04-weaving.webp" alt="织造场景情境插图（AI 示意）" id="sceneImage" width="1448" height="1086" decoding="async" loading="lazy">
+
+          <div class="hotspots" id="hotspots"></div>
+
+        </figure>
+
+        <aside class="scene-panel" id="scenePanel" aria-live="polite"></aside>
+
+      </div>
+
+
+
+      <ol class="steps reveal" id="steps"></ol>
+
+      <div class="illus-strip reveal" aria-label="工艺情境插图">
+
+        <figure><img src="assets/illustrations/p01-yarn-preparation.webp" alt="线材准备情境示意" width="1448" height="1086" decoding="async" loading="lazy"><figcaption>线材准备</figcaption></figure>
+
+        <figure><img src="assets/illustrations/p02-yarn-dyeing.webp" alt="染线情境示意" width="1448" height="1086" decoding="async" loading="lazy"><figcaption>染线</figcaption></figure>
+
+        <figure><img src="assets/illustrations/p03-warp-preparation.webp" alt="上机排经情境示意" width="1448" height="1086" decoding="async" loading="lazy"><figcaption>上机排经</figcaption></figure>
+
+        <figure><img src="assets/illustrations/p04-weaving.webp" alt="织造情境示意" width="1448" height="1086" decoding="async" loading="lazy"><figcaption>织造</figcaption></figure>
+
+        <figure><img src="assets/illustrations/p05-textile-review.webp" alt="检视成锦情境示意" width="1448" height="1086" decoding="async" loading="lazy"><figcaption>检视成锦</figcaption></figure>
+
+      </div>
+
+
+
+      <div class="weave-hero reveal">
+
+        <div class="weave-stage" id="weaveStage" role="img" aria-label="经纬交织示意：经线与纬线上下交错，随滚动自动织入"></div>
+
+        <div class="weave-copy">
+
+          <p class="eyebrow">经纬原理　PRINCIPLE</p>
+
+          <h3>一经一纬，交织成锦</h3>
+
+          <p>经线纵向展布，纬线横向穿行。切换观看两组线的交织，拖动进度，让一行行纬线织入锦面。</p>
+
+          <div class="loom-toggle" role="group" aria-label="选择经线或纬线">
+
+            <button type="button" data-weft="warp" aria-pressed="true">经线</button>
+
+            <button type="button" data-weft="weft" aria-pressed="false">纬线</button>
+
+          </div>
+
+        </div>
+
+        <div class="weave-bar">
+
+          <p id="weaveCount">当前织入 0 / 10 行纬线</p>
+
+          <input type="range" id="weaveRange" min="0" max="10" step="0.01" value="0" aria-label="织入进度">
+
+          <div class="weave-actions">
+
+            <button type="button" id="weavePlay">暂停</button>
+
+            <button type="button" id="weaveReset">重置</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+        </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- 03 纹样档案 -->
+
+  <section class="chapter chapter--paper mark-tr" id="archive" style="--mark:url('assets/illustrations/c03-foliage.webp')">
+
+    <div class="wrap">
+
+      <header class="chapter-head reveal">
+
+        <p class="chap-no"><img class="chap-icon" src="assets/icons/archive.webp" alt="" width="512" height="512" decoding="async" loading="lazy"><span>叁</span>ARCHIVE</p>
+
+        <img class="brush" src="assets/titles/04-纹样档案.webp" alt="纹样档案" width="969" height="360" decoding="async" loading="lazy">
+
+        <p class="lede">从几何与草木，到动物形态和建筑文字，循着形与色阅读锦面。</p>
+
+      </header>
+
+
+
+      <div class="cat-cards reveal" id="catCards" role="group" aria-label="按类别进入档案"></div>
+
+
+
+      <div class="archive-bar reveal">
+
+        <button class="reset-cat" type="button" id="resetCat">全部</button>
+
+        <label class="search-field">
+
+          <img src="assets/icons/search.webp" alt="" width="16" height="16" decoding="async" loading="lazy">
+
+          <span>查找纹样</span>
+
+          <input type="search" id="archiveSearch" placeholder="类别 / 颜色 / 编号" autocomplete="off">
+
+        </label>
+
+        <p class="archive-count" id="archiveCount" role="status">全部纹样</p>
+
+      </div>
+
+
+
+      <div class="archive-grid" id="archiveGrid"></div>
+
+      <div class="empty" id="archiveEmpty" hidden><p>没有找到匹配的纹样，可换一个关键词或重置筛选。</p><button type="button" id="archiveClear">重置筛选</button></div></div>
+
+  </section>
+
+
+
+  <div class="wall-band" aria-label="全部档案纹样铺陈">
+
+    <img id="wallBand" src="mosaics/mosaic-rich.webp" alt="精选档案纹样拼成的满版图案墙" width="3360" height="1440" decoding="async" loading="lazy">
+
+    <p>档案纹样原色铺陈</p>
+
+  </div>
+
+
+
+  <!-- 04 纹样关系 -->
+
+  <section class="chapter chapter--dark" id="relations">
+
+    <div class="wrap">
+
+      <header class="chapter-head reveal">
+
+        <p class="chap-no"><img class="chap-icon" src="assets/icons/palette.webp" alt="" width="512" height="512" decoding="async" loading="lazy"><span>肆</span>RELATIONS</p>
+
+        <img class="brush brush--plate" src="assets/titles/05-纹样关系.webp" alt="纹样关系" width="969" height="360" decoding="async" loading="lazy">
+
+        <p class="lede">从纹样类别看主色构成，从色彩共现读锦面层次，探索傣锦纹样之间的联系。</p>
+
+      </header>
+
+      <div class="atlas" id="atlas"></div>
+    </div>
+  </section>
+
+
+
+  <!-- 05 互动转译 -->
+
+  <section class="chapter chapter--paper mark-bl" id="translate" style="--mark:url('assets/illustrations/c04-shuttle-yarn.webp')">
+
+    <div class="wrap">
+
+      <header class="chapter-head reveal">
+
+        <p class="chap-no"><img class="chap-icon" src="assets/icons/translate.webp" alt="" width="512" height="512" decoding="async" loading="lazy"><span>伍</span>TRANSLATE</p>
+
+        <img class="brush" src="assets/titles/06-互动转译.webp" alt="互动转译" width="969" height="360" decoding="async" loading="lazy">
+
+        <p class="lede">从搭配方案开始，或自由选锦配花。调整构图与配色，设计自己的方巾或书签，也可以织成长卷。</p>
+
+      </header>
+
+      <div class="trans-grid"></div>
+    </div>
+  </section>
+
+
+
+  <!-- 06 传承故事 -->
+
+  <section class="chapter chapter--paper2" id="people">
+
+    <div class="wrap">
+
+      <header class="chapter-head reveal">
+
+        <p class="chap-no"><img class="chap-icon" src="assets/icons/heritage.webp" alt="" width="512" height="512" decoding="async" loading="lazy"><span>陆</span>PEOPLE</p>
+
+        <img class="brush" src="assets/titles/07-传承故事.webp" alt="传承故事" width="969" height="360" decoding="async" loading="lazy">
+
+        <p class="lede">从祖辈与母亲的教习，到师徒相授与村寨传习，一门手艺在人与人之间延续。</p>
+
+      </header>
+
+
+
+      <div class="people-flow" id="peopleTrack" aria-label="人物记录，沿中轴向下阅读"></div>
+
+      
+
+
+
+      <figure class="lineage"></figure>
+
+
+
+      <div class="timeline-wrap reveal">
+
+        <div class="timeline-head">
+
+          <p class="eyebrow">传承足迹　TIMELINE</p>
+
+          <h3>经纬之间，岁月留痕</h3>
+
+        </div>
+
+        <ol class="timeline" id="timeline"></ol>
+
+      </div></div>
+
+  </section>
+
+
+
+  <!-- 07 资料来源 -->
+
+  
+
+</main>
+
+
+
+<aside class="side-dock" aria-label="快捷操作">
+
+  <button class="dock-btn" id="helpBtn" type="button" aria-label="帮助与纠错"><b>?</b><span>帮助</span></button>
+
+  <button class="dock-btn" id="toTop" type="button" aria-label="回到顶部"><b>↑</b><span>顶部</span></button>
+
+</aside>
+
+
+
+<footer class="site-foot">
+
+  <div class="wrap foot-inner">
+
+    <div class="foot-brand">
+
+      <span class="brand-seal" aria-hidden="true">傣</span>
+
+      <p>傣锦纹录<em>一经一纬，织见傣乡</em></p>
+
+
+    </div>
+
+    <div class="foot-links">
+
+      <a href="#scroll">展卷</a><a href="#region">地域溯源</a><a href="#craft">经纬工艺</a><a href="#archive">纹样档案</a><a href="#relations">纹样关系</a><a href="#translate">互动转译</a><a href="#people">传承故事</a>
+
+    </div>
+
+    <div class="foot-sources">
+
+      <p class="foot-src-title">资料来源 <span id="footSrcCount"></span></p>
+
+      <div class="foot-src-list" id="footSources"></div>
+
+      <details class="foot-limits">
+
+        <summary>资料与编录说明</summary>
+
+        <p>图谱采用130幅纹样图像，另有2幅拼接总览；分类沿用原目录。色彩分析基于数字图像显示色。地图采用市县层级区域位置；人物关系和时间节点依据所列档案与报道。工艺场景为AI辅助创作的情境插图，经纬动画展示基本交织原理。</p>
+
+      </details>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+<dialog class="pattern-dialog" id="patternDialog">
+
+  <button class="dialog-close" id="dialogClose" type="button" aria-label="关闭">×</button>
+
+  <div class="dialog-body">
+
+    <figure class="dialog-figure"><img id="dialogImage" src="" alt=""><figcaption id="dialogCaption"></figcaption></figure>
+
+    <div class="dialog-info">
+
+      <p class="eyebrow" id="dialogCategory">档案</p>
+
+      <h2 id="dialogTitle">DJ-XXX-000</h2>
+
+      <dl class="dialog-fields" id="dialogFields"></dl>
+
+      <p class="dialog-note">细看纹样如何排列，体会轮廓与配色的变化，也可保存图像，留作下一次阅读。</p>
+
+      <div class="dialog-actions">
+
+        <a class="btn btn--ghost btn--dark-text" id="dialogDownload" href="" download><img src="assets/icons/download.webp" alt="" width="16" height="16" style="display:inline-block" decoding="async" loading="lazy">保存这张图像</a>
+
+        <button class="btn btn--ghost btn--dark-text" id="dialogFav" type="button">收藏</button>
+
+        <button class="btn btn--dark" id="dialogPrev" type="button">上一张</button>
+
+        <button class="btn btn--dark" id="dialogNext" type="button">下一张</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</dialog>
+
+
+
+<dialog class="mini-dialog" id="helpDialog">
+
+  <button class="dialog-close" type="button" data-close aria-label="关闭">×</button>
+
+  <p class="eyebrow">帮助　HELP</p>
+
+  <h2>浏览帮助</h2>
+
+  <div class="faq">
+
+    <div><h4>检索纹样</h4><p>按类别浏览，或输入颜色和档案编号，也可以用空格组合关键词。打开纹样可细看图像，也可收藏或保存。</p></div>
+
+    <div><h4>地图与工艺热点</h4><p>选择地图标记，阅读各地的织锦故事；点击工艺热点，观察织机构件，细看线束与手部动作。</p></div>
+
+    <div><h4>探索图谱</h4><p>切换图谱，点选图形或图例，查看对应纹样。可展开全屏或暂停巡览，也可打开统计说明阅读数据。</p></div>
+
+    <div><h4>创作锦面</h4><p>按类别和颜色选纹样，或直接套用搭配方案。点击锦面可转动局部纹样，撤销可返回上一步。草稿自动保存在当前浏览器，完成后可保存 PNG。</p></div>
+
+    <div><h4>资料反馈</h4><p>反馈时请注明档案编号和相关页面，并附参考资料，便于定位内容。</p></div>
+
+  </div>
+
+</dialog>
+
+
+
+<dialog class="mini-dialog" id="accountDialog">
+
+  <button class="dialog-close" type="button" data-close aria-label="关闭">×</button>
+
+  <div id="accountBody"></div>
+
+</dialog>
+
+
+
+<script defer src="motion/daijin-scroll.js?v=38"></script>
+<script defer src="data/gallery.js?v=38"></script>
+<script defer src="data/atlas-image-metrics.js?v=38"></script>
+<script defer src="data/site-data.js?v=38"></script>
+<script defer src="site.js?v=38"></script>
+<script defer src="motion/hero-flow.js?v=38"></script>
+<script defer src="motion/atlas-experience.js?v=38"></script>
+<script defer src="motion/lineage-experience.js?v=38"></script>
+<script defer src="motion/reading-layout.js?v=38"></script>
+<script defer src="motion/chapter-transitions.js?v=38"></script>
+<script defer src="motion/mobile-experience.js?v=38"></script>
+<script defer src="data/studio-patterns.js?v=38"></script>
+<script defer src="data/studio-recipes.js?v=38"></script>
+<script defer src="motion/studio-export.js?v=38"></script>
+<script defer src="motion/loom.js?v=39"></script><script defer src="motion/loom-mockup.js?v=39"></script><script defer src="motion/loom-experience.js?v=39"></script><script defer src="motion/pattern-studio.js?v=39"></script>
+<script defer src="motion/research-carousel.js?v=38"></script>
+
+</body>
+
+</html>
+

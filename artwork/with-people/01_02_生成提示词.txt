@@ -1,0 +1,26 @@
+生成方式：内置 image_gen
+风格母版：织锦主场景_平面织线版_v5.png（生成时参考文件）
+transparent_background: false
+
+01_原料与线材准备
+
+Use case: illustration-story.
+Create ONE independent illustration for the Dai brocade production process: RAW MATERIAL AND YARN PREPARATION. Use the supplied image solely as the exact STYLE and CHARACTER master, not as the scene to repeat. Match its graphic rendering faithfully.
+Scene: a single adult Dai woman, the same slim grown woman as in the reference, sits on a simple low golden wooden stool to the right of a traditional hand spinning / winding wheel. Her hands deliberately guide a visibly continuous fine thread between her fingers and the wheel's spindle. Show a clearly readable circular wheel with spokes, the spindle, a simple wooden support, a small basket of cream raw cotton beside the wheel and a couple of neatly wound yarn balls. Her working posture is natural. No loom in this scene.
+Character invariants: normal elegant adult proportions, small head, long neck and slender arms, simple side profile and tiny simple eye; deep green high bun with one cream five-petal flower, pale mint fitted short-sleeved top with dark green collar and cuff edging, long dark green tube skirt, dark green low shoes. Preserve clothing identity, body proportions, restrained facial detail and exact graphic simplification from the reference.
+Style: completely FLAT two-dimensional print illustration, made from densely packed slender vertical solid-colored strips separated by extremely thin warm-white gaps; every strip is flat ink, NOT raised slats or 3D rods. Same fine line density and level of detail as reference. Tiny stepped contours only where individual vertical strips end and on small woven pattern bands. Shape and anatomy read continuously at a distance. Curved wheel outlines and threads remain coherent, crisp and readable.
+Color palette: deep jade green #214C43, deepest green #16241D, pale mint #BFD8C4, cream #F5F1E6, antique gold #C6A35B, restrained warm peach skin exactly like the reference. Plain uniform warm cream background #F5F1E6.
+Composition: landscape 3:2, entire woman and all equipment fully in frame, group centered occupying about 80% of the canvas, comfortable cream margin on all sides. No background scenery, no environment floor, no cast shadows.
+No words, no labels, no numbers, no logo, no decorative title. Absolutely no chunky pixel people, no large square mosaic tiles, no chibi proportions, no 3D extrusions, no cylindrical highlights, no photoreal shading, no gradients, no fine realistic facial painting.
+
+02_染线
+
+Use case: illustration-story.
+Create ONE independent illustration for the Dai brocade production process: DYEING YARN. Use the supplied image solely as the exact STYLE and CHARACTER master, not as the scene to repeat. Match its graphic rendering faithfully.
+Scene: a single adult Dai woman, the same slim grown woman as in the reference, stands in a natural side-facing work pose, lifting a long looped hank of freshly dyed deep-jade yarn up out of a broad simple dye vat. Both slender hands hold and control the upper part of the yarn hank at chest level; the hanging strands extend vertically into the open vat. Show a few tiny restrained drops of dye descending towards the vat. Beside her is a simple golden wooden drying rack with two or three separate looped yarn hanks in jade, pale mint and antique gold. Only one main vat and one simple drying rack. The lifted hank, her hand contact and the open vat must read clearly. No spinning wheel and no loom in this scene.
+Character invariants: normal elegant adult proportions around seven heads tall, small head, long neck and slender arms, simple side profile and tiny simple eye; deep green high bun with one cream five-petal flower, pale mint fitted short-sleeved top with dark green collar and cuff edging, long dark green tube skirt, dark green low shoes. Preserve clothing identity, body proportions, restrained facial detail and exact graphic simplification from the reference.
+Style: completely FLAT two-dimensional print illustration, made from densely packed slender vertical solid-colored strips separated by extremely thin warm-white gaps; every strip is flat ink, NOT raised slats or 3D rods. Same fine line density and level of detail as reference. Tiny stepped contours only where individual vertical strips end and on small woven pattern bands. Shape and anatomy read continuously at a distance. Yarn is recognizable as hanging fine strands, not solid slabs.
+Color palette: deep jade green #214C43, deepest green #16241D, pale mint #BFD8C4, cream #F5F1E6, antique gold #C6A35B, restrained warm peach skin exactly like the reference. Plain uniform warm cream background #F5F1E6.
+Composition: landscape 3:2, entire woman and all equipment fully in frame, group centered occupying about 80% of the canvas, comfortable cream margin on all sides. No background scenery, no environment floor, no cast shadows.
+No words, no labels, no numbers, no logo, no decorative title. Absolutely no chunky pixel people, no large square mosaic tiles, no chibi proportions, no 3D extrusions, no cylindrical highlights, no photoreal shading, no gradients, no fine realistic facial painting.
+

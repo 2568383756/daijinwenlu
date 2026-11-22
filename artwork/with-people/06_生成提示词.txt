@@ -1,0 +1,36 @@
+使用工具：内置 image_gen。
+版本 v5：保留正常成年人比例，细密竖向织线，平面色块，减少微小装饰。当前为单个织锦主场景风格稿。
+
+主场景生成提示词：
+Create ONE new sophisticated Dai brocade weaving illustration, taking IMAGE 1, the Gannan tea-picking opera graphic poster, as the authoritative STYLE reference. IMAGE 2, the six realistic green craft illustrations, is ONLY a reference for the bottom-right weaving activity, green palette, and natural adult body proportions. Do NOT make another six-scene sheet. Make one large beautifully composed weaving scene.
+
+The user rejected coarse pixel characters and excessive simplification. The desired visual language is the finely striped figure construction of IMAGE 1: sophisticated flat graphic illustration with elegant adult anatomy, gentle stepped contours formed by thin vertical strips. NOT generic pixel art, NOT 8-bit game sprites, NOT Minecraft, NOT large mosaic squares.
+
+COMPOSITION:
+A landscape 3:2 image on a completely uniform opaque warm ivory #F5F1E6 background. A Dai woman seated at the right of a wooden handloom that extends toward the left foreground, seen at a restrained three-quarter angle. Whole loom, woman and feet inside frame, with substantial quiet ivory margin. A small basket holding two skeins at lower left, otherwise no extra props. The dark green brocade emerging over the front beam is a dominant graphic shape with two restrained bands of stepped cream and antique-gold diamond motifs. No texts or captions anywhere.
+
+ANATOMY AND GESTURE:
+Elegant young ADULT woman with normal 7–7.5-head standing-equivalent body proportions: small head, long graceful neck, slender torso and limbs, accurate elbows, natural long hands, clear calm working posture. Keep the body proportions as graceful as the women in IMAGE 2, not compressed or childish. One hand guides a slender shuttle across the warp, the other rests near the working cloth edge. Hair is swept up into a modest high bun with one small cream flower; no elaborate jewelry. Fitted pale mint Dai blouse, long dark jade tube skirt. Side/three-quarter profile with minimal subtle facial marks, just enough to show a quiet expression; do not render facial shading or realistic eyelashes. The figure should remain elegant even as a solid silhouette.
+
+PRECISE STYLE, most important:
+Construct the illustration from dense, narrow, PARALLEL VERTICAL COLOR STRIPS with fine ivory spaces between them, closely following IMAGE 1. Each strip is thin, so there are dozens of strips across the woman's upper body, NOT a dozen coarse blocks. The strips have varying heights to describe the graceful silhouette. From far away it reads as one continuous finely proportioned figure; up close the linear warp / woven graphic structure is unmistakable. Flat colors changing along the strips form skin, blouse, skirt, hairstyle and tool surfaces, like a carefully art-directed woven paper-cut print. The reference is finely fluted / striped, not grid-overlay line drawing. Do not draw square grid outlines all over the woman. A few delicate stepped edges may appear where strip heights change along shoulders, sleeves, bun and skirt. Brocade pattern contains genuinely woven small stepped diamonds and tiny checker contrasts, with simple motifs rather than ornate decoration. Very restrained horizontal weft interruptions only on the cloth. No coarse pixel face, no blocky mitten hands, no thick ink contours.
+
+DETAIL LEVEL:
+Intermediate, not realistic and not crude: retain natural silhouette, meaningful gestures, clear structural loom beams and recognizable fabric; omit wood grain, clothing wrinkles, embroidery microdetail, carved decorations and photorealistic modeling. The loom is a clean flat-color illustration with credible simple construction, joined wooden beams and aligned warp, and shares the fine vertical-striped visual language. Threads represented as deliberate fine parallel lines, not a photorealistic mesh. No gradient shading or 3D volume anywhere. No transparent brown wash, glow, vignette, ground shadow, watercolor texture, or blur.
+
+COLOR:
+Website palette: deep jade green #214C43, forest #16241D, mint #BFD8C4, warm ivory #F5F1E6, small muted antique gold #C6A35B accents for selected loom surfaces; cream skin. Green and ivory should dominate overall. Wood is muted green-gold, not rich realistic brown. Use a subtle pale jade alternative for some tool beams so gold does not overwhelm the scene.
+
+The result should resemble a polished cultural-design competition illustration: an adult craftswoman and loom reinterpreted through fine warp-like graphic stripes, with confident elegant proportions, unmistakable textile texture and an uncluttered paper background.
+
+平面化修改提示词：
+只修改图1的表面画法，不改变人物头身比例、身体轮廓、姿势、动作、织机外形、构图、色系。图2是最终要贴近的平面海报画法参考。
+
+把图1重绘为真正的二维平面印刷插画。现在每根竖条都像圆柱、有高光和投影，这必须全部去掉。所有竖条必须是绝对平整的单色矩形色条，条与条之间仅有细细的纸白缝隙，参考图2的人物处理。没有立体圆柱，没有凹凸压纹，没有倒角，没有任何光照渲染，也没有渐变或光泽。人物仍然是修长的正常成年人，不能变成大头短身，也不能变成粗像素小人。
+
+脸部：保留当前头部和侧脸的轮廓、角度，脸里面只留单色肤色加细竖向白缝，可保留一个极小眼部标记，删除眉毛睫毛、嘴唇刻画、耳朵内部结构和肤色明暗。手部保留自然动作和轮廓，删除指甲、关节刻画。花朵变成几个简单奶白色花瓣，不刻画花瓣线条。衣服保持完整色面和细密竖向线条，仅保留领口和腰间简洁深绿边线，删除细碎刺绣花边、褶皱和缝线。
+
+织机：保留相同结构和透视，所有木架改为纯粹平面的哑光古金与浅绿矩形，竖向条纹是印刷纹理，绝不塑造木架立体材质。锦布保留三枚清晰菱形主纹样和两条简单细边纹，删除其他密集装饰。线团保留圆形和少量弧线，不描绘真实纤维。整体细节比图1减少约一半，但保持同样的优雅比例、完整器具和可读动作。
+
+细竖条的节奏、形体与留白请非常贴近图2，而不是给精细写实图套条纹滤镜。边缘可以有细微阶梯，阶梯尺度保持细，不做粗方块锯齿。背景保持统一纯米白。无文字，无数字，无边框。最终必须是能用于信息可视化海报的成熟平面插画，不能像3D纸雕或栅栏雕塑。
+

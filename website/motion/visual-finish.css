@@ -1,0 +1,51 @@
+/* 居中的金字与织梭入口与阶梯锦框，沿用既有素材的形制。 */
+.hero{min-height:100svh;align-items:center;justify-content:center;padding:calc(var(--site-header-height,80px) + 48px) 5vw 100px}
+.hero .hero-copy{width:100%;max-width:1120px;margin:0;text-align:center}
+.hero .hero-copy h1{max-width:none;margin:0}
+.hero .hero-copy h1 img{display:block;width:min(880px,75vw);height:auto;max-width:100%;max-height:none;margin:0 auto;object-position:center;filter:drop-shadow(0 8px 24px #061c18a0)}
+.hero .hero-actions{justify-content:center;gap:30px;margin-top:52px}
+.hero .hero-veil{background:radial-gradient(ellipse at center,rgba(6,26,19,.64),rgba(6,26,19,.38) 70%),linear-gradient(180deg,#071910aa,transparent 30%,#07191088)}
+.hero-entry{position:relative;display:inline-flex;align-items:center;justify-content:center;width:250px;height:68px;color:#214c43;font:18px/1.4 var(--sans);letter-spacing:.1em;isolation:isolate;transition:transform .25s}
+.hero-entry svg{position:absolute;inset:0;width:100%;height:100%;z-index:-1;overflow:visible}
+.hero-entry .entry-fill{fill:#f5f1e6;stroke:#c6a35b;stroke-width:3}
+.hero-entry .entry-line{fill:none;stroke:#a78039;stroke-width:1.6}
+.hero-entry--gold .entry-fill{fill:#c6a35b;stroke:#ead9a6}
+.hero-entry--gold .entry-line{stroke:#745a27}
+.hero-entry:hover{transform:translateY(-3px)}
+.hero-entry:focus-visible{outline:3px solid #f5f1e6;outline-offset:5px}
+.cat-cards{gap:clamp(16px,2vw,32px);padding-block:12px}
+.cat-card{padding:5px}
+.cat-card .cat-inner{padding:38px 14px 40px}
+.cat-card .cat-visual{border:3px solid var(--gold);padding:4px}
+.cat-card .cat-title{font-size:clamp(20px,1.8vw,27px);white-space:nowrap}
+.cat-card[aria-pressed="true"] .cat-inner{background:#e1eadc}
+.cat-card:focus-visible{filter:drop-shadow(0 0 4px var(--jade));outline-offset:0}
+.head-action::before,.reset-cat::before,#dialogFav::before,#weavePlay::before,#weaveReset::before,.studio-actions [data-action="save"]::before,.studio-actions [data-action="reset"]::before,.studio-inspire::before{content:"";display:inline-block;flex:none;width:30px;height:30px;background:center/contain no-repeat;vertical-align:middle;margin-right:7px}
+.head-action::before{background-image:url('../assets/icons/search.webp')}
+.head-action>span{display:none}
+.reset-cat::before{background-image:url('../assets/icons/filter.webp')}
+#dialogFav::before{background-image:url('../assets/icons/favorite.webp')}
+#weavePlay::before{background-image:url('../assets/icons/play.webp')}
+#weaveReset::before,.studio-actions [data-action="reset"]::before{background-image:url('../assets/icons/replay.webp')}
+.studio-actions [data-action="save"]::before{background-image:url('../assets/icons/download.webp')}
+.studio-inspire::before{background-image:url('../assets/icons/palette.webp');width:34px;height:34px}
+.studio-inspire{display:flex;align-items:center;justify-content:center}
+.studio-inspire>span{margin-left:auto}
+.search-field>img,#dialogDownload>img{width:30px;height:30px;object-fit:contain}
+@media(max-width:1100px) and (min-width:761px){.cat-cards{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.cat-card .cat-inner{padding:30px 6px}.cat-card .cat-title{font-size:18px;letter-spacing:0}}
+@media(max-width:760px){
+ .hero{min-height:100svh;padding:120px 20px 110px}
+ .hero .hero-copy{margin:0}
+ .hero .hero-copy h1 img{width:100%;max-height:none}
+ .hero .hero-actions{gap:10px;margin-top:36px;flex-wrap:nowrap}
+ .hero-entry{width:calc(50% - 5px);max-width:230px;height:56px;font-size:14px;letter-spacing:.01em}
+ .cat-cards{gap:18px 14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+ .cat-card .cat-inner{padding:28px 8px 30px}
+ .cat-card:last-child{grid-column:1/-1;justify-self:center;width:calc(50% - 7px)}
+ .cat-card .cat-title{font-size:21px;letter-spacing:.02em}
+ .cat-card .cat-count{font-size:14px}
+ .site-head .head-action::before{width:25px;height:25px;margin-right:0}
+ .site-head .head-action{font-size:0;width:44px;padding:8px}
+ .studio-actions [data-action]::before{width:24px;height:24px;margin-right:4px}
+}
+@media(prefers-reduced-motion:reduce){.hero-entry{transition:none}.hero-entry:hover{transform:none}}
