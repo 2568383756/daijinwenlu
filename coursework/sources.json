@@ -1,0 +1,95 @@
+{
+  "verified_date": "2026-11-22",
+  "public_html": "chart-examples/index.html",
+  "image_transform": "等比例缩小与 WebP 格式转换；未重绘图像内容。",
+  "references": [
+    {
+      "id": 1,
+      "chapter": "寻源",
+      "title": "Timeline of Chinese History",
+      "author": "Wilfredor",
+      "source": "https://commons.wikimedia.org/wiki/File:Timeline_of_Chinese_History.svg",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "use": "历史折返时间轴；只借鉴事件与时间带的组织方式。",
+      "image_included": true
+    },
+    {
+      "id": 2,
+      "chapter": "在地",
+      "title": "Map of World Heritage site colour coded by UNESCO inclusion criteria",
+      "author": "NavinoEvans",
+      "source": "https://commons.wikimedia.org/wiki/File:Map_of_World_Heritage_site_colour_coded_by_UNESCO_inclusion_criteria.png",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "use": "2019 年世界遗产分类点位图，不表示当前完整名录或傣锦地域分布。",
+      "image_included": true
+    },
+    {
+      "id": 3,
+      "chapter": "成锦",
+      "title": "Cotton Education Kit, Chapter 7: Processing: from Gin to Fabric（PDF 第 10 页图表节选）",
+      "author": "Cotton Australia",
+      "source": "https://cottonaustralia.com.au/assets/general/Education-resources/CA-resources/CEK_Chap_7_Processing_From_Gin_To_Fabric.pdf#page=10",
+      "license": "未确认开放再分发许可；仅提供官方链接",
+      "license_url": null,
+      "use": "课堂原版曾选取棉纺织品生产流程图，用于观察分支与汇合。公开版不包含该节选图或教材 PDF；它不是傣族织锦工序证据。",
+      "image_included": false
+    },
+    {
+      "id": 4,
+      "chapter": "识纹",
+      "title": "The Grammar of Ornament, Plate XXV: Pompeian No. 3 (1856)",
+      "author": "Owen Jones；Francis Bedford（石印）；National Gallery of Art, Washington（馆藏数字图）",
+      "source": "https://www.nga.gov/artworks/102555-grammar-ornament",
+      "license": "Public domain（馆方原页面标注）",
+      "license_url": "https://www.nga.gov/artworks/102555-grammar-ornament",
+      "use": "Mark J. Millard Architectural Collection，1997.109.1。庞贝装饰图版，作为重复单元与连续纹带的组织参考，不是傣族纹样。",
+      "image_included": true
+    },
+    {
+      "id": 5,
+      "chapter": "观色",
+      "title": "Qualitative colormaps / Choosing Colormaps in Matplotlib",
+      "author": "Matplotlib Development Team",
+      "source": "https://matplotlib.org/stable/users/explain/colors/colormaps.html#qualitative",
+      "license": "Matplotlib License（基于 PSF）",
+      "license_url": "https://matplotlib.org/stable/project/license.html",
+      "use": "离散色卡的并列展示，不是傣锦色彩占比或共现统计。",
+      "image_included": true
+    },
+    {
+      "id": 6,
+      "chapter": "用锦",
+      "title": "Annotated heatmap（农民—农场收成矩阵示例）",
+      "author": "Matplotlib Development Team",
+      "source": "https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html",
+      "license": "Matplotlib License（基于 PSF）",
+      "license_url": "https://matplotlib.org/stable/project/license.html",
+      "use": "官方教程的示例数据，借鉴行列交叉与单元格标注，不是真实傣锦产品—场景记录。",
+      "image_included": true
+    },
+    {
+      "id": 7,
+      "chapter": "传艺",
+      "title": "Akademischer Stammbaum Werner Heisenberg (Ausschnitt)",
+      "author": "Elrond",
+      "source": "https://commons.wikimedia.org/wiki/File:Akademischer_Stammbaum_Werner_Heisenberg_(Ausschnitt).svg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "use": "海森堡学术谱系节选，用于理解人物节点和师承连线，不是傣锦传承人物。",
+      "image_included": true
+    },
+    {
+      "id": 8,
+      "chapter": "续锦",
+      "title": "New Translator Journey Map (2020-12-08)",
+      "author": "EAsikingarmager (WMF)",
+      "source": "https://commons.wikimedia.org/wiki/File:New_Translator_Journey_Map.png",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "use": "基于多个新编辑观察模式的多语编辑研究图，不代表所有编辑或本项目网站的实测用户旅程。",
+      "image_included": true
+    }
+  ]
+}

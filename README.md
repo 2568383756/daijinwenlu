@@ -4,7 +4,19 @@
 
 项目以傣锦为线索，把地域记录、制作工艺、纹样档案、色彩关系、互动设计和传承故事组织成可浏览、可检索、可体验的网站。仓库同时保存“傣锦织谱”课程设计使用的两套工艺插图，供后续信息图、PPT 与版面设计继续使用。
 
-[在线体验傣锦纹录](https://daijinwenlu.wang-jingjing.com) · [网站文件](website/) · [人物工艺插图](artwork/with-people/) · [无人器物插图](artwork/objects/) · [下载包](downloads/)
+[在线体验傣锦纹录](https://daijinwenlu.wang-jingjing.com) · [课程汇报 PDF](coursework/reports/daijinwenlu-visual-report.pdf) · [八章图表实例](coursework/chart-examples/) · [网站文件](website/) · [插图下载包](downloads/)
+
+## 课程汇报与关键视觉
+
+王晶晶、张斯琪以“傣锦怎样织成”和“锦面怎样读”为题，分别设计了《成锦》《识纹》两张 A3 横版草图。第一张用细密织线插画串起材料与纹样准备、上机及织作循环，第二张将纹样档案、取样色卡和分类数量并排展示。
+
+| 查看内容 | 文件 |
+| --- | --- |
+| 最新视觉汇报，11 页 | [在线阅读 PDF](coursework/reports/daijinwenlu-visual-report.pdf) · [下载可编辑 PowerPoint](coursework/reports/daijinwenlu-visual-report.pptx) |
+| 原始设计方案，16 页 | [傣锦织谱 · 王晶晶、张斯琪](coursework/reports/daijinwenlu-original-proposal.pptx) |
+| 《成锦》《识纹》两张草图 | [A3 打印版 PDF](coursework/key-visuals/傣锦织谱_两张A3横版关键视觉草图.pdf) · [高清 PNG 与 SVG 源文件](coursework/key-visuals/) |
+| 寻源、在地、成锦、识纹、观色、用锦、传艺、续锦 | [八章图表实例、读图方式与原始出处](coursework/chart-examples/) |
+| 课程图表与参考作品的使用说明 | [素材来源](coursework/SOURCES.md) |
 
 ## 网站内容与功能
 
@@ -26,6 +38,7 @@
 ```text
 .
 ├── README.md
+├── coursework/                 # 两份课程 PPT、汇报 PDF、两张 A3 草图与图表实例
 ├── website/                    # 可直接通过静态 HTTP 服务预览的网站
 │   ├── index.html              # 页面结构、章节与资源加载入口
 │   ├── site.css                # 全局样式、色板与基础布局
